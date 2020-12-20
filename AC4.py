@@ -45,7 +45,7 @@ def is_pid(val):
     return True
 
 
-with open(r'C:\Users\t-caneg\Desktop\AC\AC4.txt', 'r') as f:
+with open(r'AC\AC4.txt', 'r') as f:
     list_p = f.read().split('\n\n')
 
 

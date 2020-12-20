@@ -1,4 +1,4 @@
-with open(r'C:\Users\t-caneg\Desktop\AC\AC5.txt', 'r') as f:
+with open(r'AC\AC5.txt', 'r') as f:
     list_nrs = f.read().split('\n')
 
 max_nr = 0

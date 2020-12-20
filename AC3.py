@@ -19,9 +19,8 @@ def count_trees(list_lines, rows, cols):
 
 if __name__ == "__main__":
 
-    with open(r'C:\Users\t-caneg\Desktop\AC\AC3.txt', 'r') as f:
+    with open(r'AC\AC3.txt', 'r') as f:
         list_lines = f.read().split('\n')
-    print(count_trees(list_lines, 1, 3),count_trees(list_lines, 1, 1),count_trees(list_lines, 1, 5),count_trees(list_lines, 1, 7),count_trees(list_lines, 2, 1))
 
     print(count_trees(list_lines, 1, 3)*count_trees(list_lines, 1, 1)*count_trees(list_lines, 1, 5)*count_trees(list_lines, 1, 7)*count_trees(list_lines, 2, 1))
 

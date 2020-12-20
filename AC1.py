@@ -1,4 +1,4 @@
-with open(r'C:\Users\t-caneg\Desktop\AC\AC1.txt', 'r') as f:
+with open(r'AC\AC1.txt', 'r') as f:
     list_nrs = f.read().split('\n')
 
 list_nrs = [int(elt) for elt in list_nrs]

@@ -1,4 +1,4 @@
-with open(r'C:\Users\t-caneg\Desktop\AC\AC2.txt', 'r') as f:
+with open(r'AC\AC2.txt', 'r') as f:
     list_pass = f.read().split('\n')
 
 ct = 0
