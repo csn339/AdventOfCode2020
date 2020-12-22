@@ -33,18 +33,21 @@ col = 'shiny gold'
 matched = set([col])
 flag = True
 current_ct = 0
+to_visit = set(dict_rules.keys())
 while flag:
-    for key in dict_rules:
+    for key in to_visit:
         if len(matched.intersection(set(dict_rules[key]))) == 0:
             continue
         matched.add(key)
     if current_ct != len(matched):
         current_ct = len(matched)
+        to_visit = to_visit-matched
     else:
         flag = False
 
-print(current_ct)
+print(current_ct-1)
 print(score(dict_rules, col))
+
 
 
 
